@@ -4,9 +4,6 @@
 img{
     vertical-align: middle;
 }
-body{
-    height: 3000px;
-}
 a:hover{
     text-decoration: none;
 }
@@ -159,4 +156,204 @@ a:hover{
 /*todo==================main===================*/
 #main{
     width: 100%;
+}
+#main .servers_wrap{
+    width: 100%;
+    /*width: 1200px;*/
+    /*height: 500px;*/
+    margin: 0 auto;
+    /*background-color: lightskyblue;*/
+}
+/*一个大卡片*/
+
+#main .servers_wrap .servers .box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    /*background-color: #eee;*/
+}
+#main .server_content{
+    text-align: center;
+}
+#main .server_title .item_title{
+    color: #3d3838;
+    font-weight: 800;
+    font-size: 28px;
+    font-family: "Microsoft YaHei"
+}
+#main .server_title .item_desc{
+    display: block;
+    font-size: 22px;
+    color: #3d3838;
+    margin-top: 15px;
+}
+#main .more_server{
+    height: 20px;
+    position: relative;
+}
+#main .more_server .look_more {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+#main .more_server .look_more a{
+    color: #898989;
+    font-size: 18px;
+    font-family: "幼圆";
+    padding-right: 10px;
+}
+/*小卡片包裹*/
+.concrete_list{
+    display: flex;
+}
+/*一个小卡片*/
+.concrete_list .server_card{
+    width:230px;
+    height:345px;
+    padding:10px;
+    border: 1px solid #eaeaea;
+    margin: 0 5px;
+    background-color: #fff;
+}
+.concrete_list .server_card img{
+    width:210px;
+}
+.server_card .server_name{
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 800;
+    color: #000;
+    height: 28px;
+    overflow: hidden;
+    width: 101%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.server_card .server_desc{
+    color: #929292;
+    padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 13px;
+    line-height: 18px;
+    height: 58px;
+}
+.server_price{
+    font-size: 14px;
+    padding: 5px 5px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    color: #fb474f;
+}
+.server_price .btn{
+    float: right;
+    padding: 0;
+    width: 76px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    background: #fb474f;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/*===============到位服务保障=================*/
+#guarantee{
+    width:100%;
+}
+#guarantee .top{
+    width:100%;
+    text-align: center;
+    padding-top: 60px;
+}
+#guarantee .top h2{
+    font-size: 28px;
+    font-family: "微软雅黑";
+    font-weight: 800;
+}
+#guarantee .top span{
+    color: #fb474f;
+    font-weight: inherit;
+}
+#guarantee .top p{
+    font-size: 20px;
+    color: #3d3838;
+    margin: 10px 0 0;
+}
+#guarantee .bottom{
+    width: 100%;
+    padding-top: 68px;
+    background: #fff;
+    height: 150px;
+    font-family: "微软雅黑";
+}
+#guarantee .bottom ul{
+    display: flex;
+    width: 850px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#guarantee .bottom ul li{
+    width: 33%;
+    text-align: center;
+    color: #1d1515;
+    font-size: 18px;
+}
+#guarantee .bottom ul li img{
+  margin-bottom: 10px;
+}
+
+/*==========cities===========*/
+#cities{
+    width: 1200px;
+    clear: both;
+    padding-top: 50px;
+    height: 110px;
+    margin: 0 auto;
+}
+#cities .title{
+    float: left;
+    font-weight: 700;
+    font-size: 14px;
+}
+#cities .city_list{
+    margin-left: 40px;
+    width: 1100px;
+    line-height: 30px;
+    float: right;
+}
+#cities .city_list li{
+    font-size: 16px;
+    color: #898989;
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+    font-weight: 200;
+    cursor: pointer;
+    font-family: "微软雅黑";
+}
+/*==============footer==============*/
+#footer{
+    width:100%;
+    height:80px;
+    padding-top: 50px;
+    background-color: #FBF8F8;
+}
+#footer .copyright{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer p{
+    color: #898989;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
