@@ -192,6 +192,9 @@ a:hover{
     box-sizing: border-box;
     cursor: pointer;
 }
+.box_lists_item:hover{
+    background-color: #f8f8f8;
+}
 .box_lists_item .item_pic{
     width: 138px;
     height: 138px;
@@ -337,6 +340,9 @@ a:hover{
     height: 200px;
     background: #fff;
     cursor: pointer;
+}
+.main_right .shop_list li:hover{
+    background-color: #f8f8f8;
 }
 .main_right .shop_list li:last-child .num{
     border-bottom: none;
