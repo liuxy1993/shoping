@@ -1,19 +1,22 @@
+
+/*登录*/
 .login{
     width:298px;
     height:293px;
     padding: 15px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin: 150px auto 0;
 }
-.login .logo{
+ .logo{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     height:70px;
     line-height: 70px;
-    margin-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
-.login .logo img{
+ .logo img{
     width: 290px;
     vertical-align: middle;
 }
@@ -77,7 +80,7 @@ input:not([type=radio]):not([type=checkbox]){
     width: 100%;
 }
 
-.login_btn{
+.login_btn,.reg_btn{
     width: 298px;
     height: 46px;
     padding: 10px 16px;
@@ -93,7 +96,80 @@ input:not([type=radio]):not([type=checkbox]){
     background-color: #286090;
 }
 .login_footer{
-    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    width: 258px;
     height:40px;
     padding:20px;
+}
+.login_footer a{
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 14px;
+}
+
+/*注册*/
+.register{
+    width:298px;
+    height:526px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 150px auto 0;
+}
+.inputs{
+    width:272px;
+    height:36px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.input_check{
+    position: relative;
+    width:298px;
+    height:100px;
+    margin:5px 0;
+}
+.input_check img{
+    width:200px;
+    height:48px;
+    border:1px solid #ccc;
+}
+.input_check .check_input{
+    width:176px;
+    height:36px;
+    padding:6px 12px;
+    border:1px solid #ccc;
+    margin-top: -4px;
+}
+.input_check .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width:70px;
+    height:86px;
+    padding:6px 12px;
+    border:1px solid #ccc;
+    font-size: 14px;
+    line-height: 86px;
+    color: #555;
+    background-color: #eee;
+    cursor: pointer;
+}
+.register a{
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 14px;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+.reg_margin{
+    margin: 35px 0;
+}
+.to_login{
+    text-align: center;
+    margin-top: -15px;
 }

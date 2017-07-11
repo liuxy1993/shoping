@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/loginreg.css">
 </head>
 <body>
-
+    <div class="register">
+        <div class="logo">
+            <img src="images/houtai-logo.png" alt="">
+        </div>
+        <div class="reg_content">
+            <input class="inputs" type="text" id="phoneNumber" placeholder="请输入手机号">
+            <div class="input_check">
+                <img src="images/code.jpg" alt="">
+                <input class="check_input" type="text" placeholder="请输入图片中的字符串">
+                <div class="btn">获取验证码</div>
+            </div>
+            <input class="inputs" type="text" placeholder="请输入验证码">
+            <input class="inputs" type="text" placeholder="请输入密码">
+            <input type="checkbox" checked placeholder=""><a href="#">您确认并同意到位用户协议</a>
+        </div>
+        <button class="reg_btn reg_margin">
+            注册
+        </button>
+        <div class="to_login">
+            <a href="#">已有账户?登录</a>
+        </div>
+    </div>
 </body>
 </html>

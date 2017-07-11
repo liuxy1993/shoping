@@ -1,0 +1,267 @@
+#root_wrapper{
+    width:100%;
+}
+img{
+    vertical-align: middle;
+}
+a:hover{
+    text-decoration: none;
+}
+/*todo------------------------- header ------------------------*/
+#header{
+    width:100%;
+    height:65px;
+    padding: 3px 0 2px;
+    border-bottom: 1px solid #E5E5E5;
+    text-align: center;
+}
+#header .content{
+    position: relative;
+    display: inline-block;
+    width: 1200px;
+    height:65px;
+    padding: 0 15px;
+}
+/*logo*/
+.logo_bar{
+    float: left;
+    display: block;
+    width:280px;
+    height:100%;
+    line-height: 55px;
+}
+.logo_bar img{
+    display: inline;
+    max-width: 100%;
+    max-height: 40px;
+}
+/*右侧菜单*/
+.head_menu{
+    right: 15px;
+    float: right;
+    height: 42px;
+}
+.head_menu li{
+    float: left;
+    line-height: 65px;
+}
+.head_menu li a{
+    padding: 10px 15px;
+    font-family: "黑体",Helvetica,Arial,sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.head_menu li .active{
+    color: #e94840;
+}
+.head_menu .setCity{
+    margin-right: 50px;
+}
+.head_menu .login_btn{
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #e94840;
+    color: #fff;
+    border-radius: 5px;
+}
+/*todo------------------header结束-------------------*/
+#main_wrapper{
+    width: 100%;
+    background-color: #FBF8F8;
+}
+#content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content h2{
+    height:85px;
+    line-height: 85px;
+    /*background-color: #fff;*/
+    font-size: 18px;
+    font-family: "黑体", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.main_list{
+    width: 968px;
+    float: left;
+}
+.main_list_item{
+    float: left;
+    width:210px;
+    height:278px;
+    padding: 10px;
+    border:1px solid #ccc;
+    background-color: #fff;
+    margin:0 10px 10px 0;
+}
+.main_list_item img{
+    width:210px;
+    height:210px;
+}
+.main_list_item .name{
+    width: 210px;
+    height:26px;
+    margin-top: 15px;
+}
+.name img{
+    width:18px;
+    height:17px;
+    margin: 0 6px 5px 0;
+}
+.name span{
+    font-size: 16px;
+    font-family: "黑体", Helvetica, Arial, sans-serif;
+}
+.jiedan{
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #929292;
+}
+.jiedan .to_right{
+    float: right;
+}
+/*查看更多商家*/
+.look_more_wrap{
+    width: 970px;
+    height:152px;
+    clear: both;
+}
+.look_more_wrap:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+.look_more{
+    width:198px;
+    height:48px;
+    text-align: center;
+    line-height: 48px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin:50px auto;
+    clear: both;
+    color: #b1b1b1;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*加盟*/
+.join_us{
+    float: right;
+    width:230px;
+}
+.join_us img{
+    width: 100%;
+}
+.join_us .erweima{
+    margin-top: 10px;
+    width: 230px;
+    height:290px;
+    background-image: url("../images/fuwushang_10022.jpg");
+    background-repeat:no-repeat;
+    background-size:100% ;
+}
+.join_us .erweima img{
+    width:130px;
+    height: 130px;
+    margin: 50px 0 0 50px;
+}
+
+/*===============到位服务保障=================*/
+#guarantee{
+    width:100%;
+    background-color: #fff;
+}
+#guarantee .top{
+    width:100%;
+    text-align: center;
+    padding-top: 60px;
+}
+#guarantee .top h2{
+    font-size: 28px;
+    font-family: "微软雅黑";
+    font-weight: 800;
+}
+#guarantee .top span{
+    color: #fb474f;
+    font-weight: inherit;
+}
+#guarantee .top p{
+    font-size: 20px;
+    color: #3d3838;
+    margin: 10px 0 0;
+}
+#guarantee .bottom{
+    width: 100%;
+    padding-top: 68px;
+    background: #fff;
+    height: 150px;
+    font-family: "微软雅黑";
+}
+#guarantee .bottom ul{
+    display: flex;
+    width: 850px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#guarantee .bottom ul li{
+    width: 33%;
+    text-align: center;
+    color: #1d1515;
+    font-size: 18px;
+}
+#guarantee .bottom ul li img{
+    margin-bottom: 10px;
+}
+
+/*==========cities===========*/
+#cities{
+    background-color: #fff;
+    /*width: 1200px;*/
+    width: 100%;
+    clear: both;
+    padding-top: 50px;
+    /*padding:50px 60px 0 60px ;*/
+    height: 110px;
+    margin: 0 auto;
+}
+#cities .title{
+    float: left;
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: 14px;
+}
+#cities .city_list{
+    margin-left: 40px;
+    width: 1100px;
+    line-height: 30px;
+    float: right;
+}
+#cities .city_list li{
+    font-size: 16px;
+    color: #898989;
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+    font-weight: 200;
+    cursor: pointer;
+    font-family: "微软雅黑";
+}
+/*==============footer==============*/
+#footer{
+    width:100%;
+    height:80px;
+    padding-top: 50px;
+    background-color: #FBF8F8;
+}
+#footer .copyright{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer p{
+    color: #898989;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
