@@ -4,6 +4,9 @@
 img{
     vertical-align: middle;
 }
+a{
+    color: #000;
+}
 a:hover{
     text-decoration: none;
 }
@@ -66,99 +69,206 @@ a:hover{
     border-radius: 5px;
 }
 /*todo------------------header结束-------------------*/
-#main_wrapper{
-    width: 100%;
-    background-color: #FBF8F8;
+.detail_wrapper{
+    background-color: #fbf8f8;
+    padding-bottom: 50px;
 }
-#content{
-    width: 1200px;
-    margin: 0 auto;
-}
-#content h2{
-    height:85px;
-    line-height: 85px;
-    /*background-color: #fff;*/
-    font-size: 18px;
-    font-family: "黑体", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
-.main_list{
-    width: 968px;
-    float: left;
-}
-.main_list_item{
-    float: left;
-    width:210px;
-    height:278px;
-    padding: 10px;
-    border:1px solid #ccc;
-    background-color: #fff;
-    margin:0 10px 10px 0;
-    cursor: pointer;
-}
-.main_list_item:hover{
-    box-shadow: 5px 5px 10px #888;
-}
-.main_list_item img{
-    width:210px;
-    height:210px;
-}
-.main_list_item .name{
-    width: 210px;
-    height:26px;
-    margin-top: 15px;
-}
-.name img{
-    width:18px;
-    height:17px;
-    margin: 0 6px 5px 0;
-}
-.name span{
-    font-size: 16px;
-    font-family: "黑体", Helvetica, Arial, sans-serif;
-}
-.jiedan{
-    height: 26px;
-    line-height: 26px;
-    font-size: 12px;
-    color: #929292;
-}
-.jiedan .to_right{
-    float: right;
-}
-/*查看更多商家*/
-.look_more_wrap{
-    width: 970px;
-    height:152px;
-    clear: both;
-}
-.look_more_wrap:before{
+.detail_wrapper:after{
     content: "";
     display: table;
     clear: both;
 }
-.look_more{
-    width:198px;
-    height:48px;
-    text-align: center;
-    line-height: 48px;
+.detail_content{
+    width:1200px;
+    margin: 0 auto;
+}
+/*面包屑导航*/
+.all_category{
+    height: 85px;
+    overflow: hidden;
+}
+.all_category li{
+    float: left;
+}
+.all_category span, .all_category a{
+    font-size: 18px;
+    line-height: 85px;
+    font-family: "黑体", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.all_category .gt{
+    margin: 0 10px;
+}
+.all_category .item{
+    color: #fb4e55;
+}
+/*-------------------------------*/
+.content_left{
+    float: left;
+}
+.detail_head{
+    width:958px;
+    height:218px;
     border:1px solid #ccc;
-    border-radius: 5px;
-    margin:50px auto;
-    clear: both;
-    color: #b1b1b1;
     background-color: #fff;
-    cursor: pointer;
 }
-/*加盟*/
-.join_us{
+.detail_head img{
+    float: left;
+    width: 158px;
+    height: 158px;
+    border: 1px solid #ccc;
+    margin:30px;
+}
+.detail_head .about{
+    margin-top: 30px;
+    display: inline-block;
+}
+.detail_head .about > p{
+    height: 42px;
+    line-height: 42px;
+}
+.detail_head .about .name{
+    font-size: 18px;
+    color: #1d1515;
+}
+.about p > span{
+    font-size: 14px;
+}
+.about .price .in_span{
+    font-size: 20px;
+    color: #fc545e;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.about .price .in_span em{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+.about .price .old_price{
+    font-size: 14px;
+    color: #898989;
+    margin-left: 40px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+.special .youhui{
+    border: 1px solid #fb474f;
+    color: #fb474f;
+    font-size: 12px;
+    padding: 0 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-style: normal;
+    margin-left: 10px;
+    height: 24px;
+    line-height: 24px;
+}
+.sold .count{
+    color: #fb474f;
+}
+.detail_head .erweima{
     float: right;
-    width:230px;
+    width: 115px;
+    height: 177px;
+    margin: 20px 60px 0 0;
 }
-.join_us img{
-    width: 100%;
+.detail_head .erweima img{
+    width: 115px;
+    height: 115px;
+    margin: 0;
 }
-.join_us .erweima{
+.detail_head .erweima p{
+    clear: both;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+.detail_head .erweima p:last-child{
+    color: #fb474f;
+}
+/*===================================*/
+
+.detail_body{
+    width: 918px;
+    min-height: 363px;
+    padding: 30px 20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+    background-color: #fff;
+}
+.detail_body h3{
+    border-bottom: 3px solid #fb474f;
+    padding: 5px;
+    margin-top: 10px;
+    width: 66px;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+.detail_body p{
+    line-height: 24px;
+    margin: 15px 0 5px;
+    font-size: 14px;
+}
+.detail_body p span{
+    margin-left: 20px;
+}
+.detail_body p span em{
+    color: #fb474f;
+    font-style: normal;
+}
+/*右侧*/
+.content_right{
+    float: right;
+    width: 230px;
+    height: 656px;
+    margin-left: 10px;
+}
+.content_right_top{
+    width: 228px;
+    /*height: 354px;*/
+    border:1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.content_right_top h3{
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+}
+.content_right_top img{
+    width: 80px;
+    height: 80px;
+    margin: 40px 50px;
+    text-align: center;
+}
+.content_right_top p.name{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.content_right_top p.desc{
+    text-align: left;
+    padding: 0 10px;
+    line-height: 36px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.content_right_top p.desc span{
+    float: right;
+    color: #fb474f;
+}
+.content_right_bottom{
     margin-top: 10px;
     width: 230px;
     height:290px;
@@ -166,16 +276,21 @@ a:hover{
     background-repeat:no-repeat;
     background-size:100% ;
 }
-.join_us .erweima img{
+.content_right_bottom img{
     width:130px;
     height: 130px;
     margin: 50px 0 0 50px;
 }
 
+
+
+
+
 /*===============到位服务保障=================*/
 #guarantee{
     width:100%;
     background-color: #fff;
+    clear: both;
 }
 #guarantee .top{
     width:100%;

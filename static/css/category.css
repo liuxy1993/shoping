@@ -1,5 +1,5 @@
 body{
-    background-color: #f8f8f8;
+    background-color: #fbf8f8;
 }
 #root_wrapper{
     width:100%;
@@ -73,11 +73,13 @@ a:hover{
 #list_wrapper{
     width:1200px;
     margin: 0 auto;
-    /*height:3000px;*/
-    
 }
 .all_category{
     height: 85px;
+    overflow: hidden;
+}
+.all_category li{
+    float: left;
 }
 .all_category span, .all_category a{
     font-size: 18px;
